@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> My Resume </title>
+</head>
+
+<body>
+Hi. This is Yashwanth.
+
+<p> Welcome </p>
+
+<b> This is my site </b>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<img src="/home/seed/SIAD/lab6/index.jpeg" width="100" height="100"/>
+
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+<div id="mydiv"
+onclick="document.getElementById('mydiv').innerHTML= Date()">Show Date()</div>
+
+
+<div id="email" onclick="showhide()">show my email</div>
+<script>
+var shown = false;
+function showhide(){
+  if (shown){
+      document.getElementById('email').innerHTML = "show my email";
+    shown = false;
+    }else{
+    var myemail = "<a href='mailto:mores1"+ "@" + "udayton.edu'>mores1" +      "@" + "udayton.edu</a>";
+    //alert("myemail="+myemail);
+      document.getElementById('email').innerHTML= myemail;
+      shown = true;
+    }
+}
+
+</script>
+<script src="myscripts.js"></script>
+
+<script>alert("hello from yashwanth more.")
+</script>
+
+
+<script>
+function startTime(){
+document.getElementById('clock').innerHTML = new Date();
+
+setTimeout(startTime, 500);
+}
+</script>
+
+<body onload="startTime()">
+
+<div id="clock"></div>
+
+
+<form   action="/cgi-bin/hello.cgi"  >
+
+    
+Username : <input name="name" size="20">
+
+
+password : <input name="password" size="20">
+
+
+<input type = "submit" value="Submit!">
+
+
+
+
+
+</form>
+
+
+
+
+
+
+</body>
+
+</html>
